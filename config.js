@@ -17,6 +17,7 @@ module.exports = {
 			'source': function(record) {
 				var desc = 'Contents: ' + record.field_202 + ' - Purpose: ' + record.field_203;
 				if(record.field_204) desc += ' - Additional Comments: ' + record.field_204;
+				return desc;
 			}
 		},
 		{
@@ -39,14 +40,14 @@ module.exports = {
 		},
 		{
 			'label': 'Contact Name',
-			'pod': 'contactPoint',//.fn',
-			'dcat': null,//'dcat:contactPoint.vcard:fn',
+			'pod': 'contactPoint.fn',
+			'dcat': 'dcat:contactPoint.vcard:fn',
 			'source': null
 		},
 		{
 			'label': 'Contact Email',
-			'pod': 'contactPoint',//.hasEmail',
-			'dcat': null,//'dcat:contactPoint.vcard:hasEmail',
+			'pod': 'contactPoint.hasEmail',
+			'dcat': 'dcat:contactPoint.vcard:hasEmail',
 			'source': 'field_201'
 		},
 		{

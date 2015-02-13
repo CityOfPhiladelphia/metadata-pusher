@@ -1,0 +1,1074 @@
+{
+    "@type": "dcat:Catalog",
+    "conformsTo": "https://project-open-data.cio.gov/v1.1/schema",
+    "dataset": [
+        {
+            "title": "Advisory Alerts",
+            "description": "Contents: Alerts sent out broadly to the public at large or to specific groups related to specific ethics issues. - Purpose: Timely alerts to inform the public of specific ethics issues without waiting for a regularly scheduled Board meeting.",
+            "publisher": "Board of Ethics",
+            "contactPoint": {
+                "hasEmail": "tina.formica@phila.gov"
+            },
+            "identifier": "54d52f5329cea01e684a0e9d",
+            "accessLevel": "Public",
+            "temporal": "2006 to the present",
+            "accrualPeriodicity": "As required",
+            "dataQuality": "Hygiene: 5 - Accuracy: 5",
+            "describedByType": "Combination of Scanned and Searchable PDFs"
+        },
+        {
+            "title": "Lobbyist Registration (2014 - Present)",
+            "description": "Contents: Information on lobbyist, lobbying firms, and principals conducting lobbying in the City. - Purpose:  - Additional Comments: Data is accurate in so far as it is the data entered by the filers.  However, data is not normalized so multiple variations of a name or address may exist in the database.",
+            "modified": "NA",
+            "publisher": "Board of Ethics",
+            "contactPoint": {
+                "hasEmail": "bryan.mchale@phila.gov"
+            },
+            "identifier": "54d52f5229cea01e684a0e94",
+            "accessLevel": "Public",
+            "temporal": "2014 to the present",
+            "accrualPeriodicity": "Continuously",
+            "dataQuality": "Hygiene: 4 - Accuracy: 3",
+            "describedByType": "Searchable PDF, CSV",
+            "systemOfRecords": "Acclaim"
+        },
+        {
+            "title": "Lobbyist Registration (2012 - 2013)",
+            "description": "Contents: Information on lobbyist, lobbying firms, and principals conducting lobbying in the City. - Purpose: ",
+            "modified": "NA",
+            "publisher": "Board of Ethics",
+            "contactPoint": {
+                "hasEmail": "bryan.mchale@phila.gov"
+            },
+            "identifier": "54d52f5229cea01e684a0e92",
+            "accessLevel": "Public",
+            "temporal": "2012 - 2013",
+            "accrualPeriodicity": "Not updated (historical only)",
+            "dataQuality": "Hygiene: 4 - Accuracy: 3",
+            "describedByType": "Scanned PDF",
+            "systemOfRecords": "Paper"
+        },
+        {
+            "title": "Lobbyist Activity/Expenditures (2012 - 2013)",
+            "description": "Contents: Information on lobbying activity by principals, lobbyists, and lobbying firms. - Purpose: ",
+            "modified": "NA",
+            "publisher": "Board of Ethics",
+            "contactPoint": {
+                "hasEmail": "bryan.mchale@phila.gov"
+            },
+            "identifier": "54d52f5229cea01e684a0e93",
+            "accessLevel": "Public",
+            "temporal": "2012 - 2013",
+            "accrualPeriodicity": "Not updated (historical only)",
+            "dataQuality": "Hygiene: 4 - Accuracy: 3",
+            "describedByType": "Scanned PDF",
+            "systemOfRecords": "Paper"
+        },
+        {
+            "title": "Advice/Opinion Archive",
+            "description": "Contents: Legal Opinions responding to requests for advice.  Can be either Opinions from the Board or Opinions from the Board's General Counsel. - Purpose: Data is used for legal research on the application of the City's Ethics Code and other public integrity laws under the Board's purview to specific fact patterns. - Additional Comments: Requestors can ask for Non-Public opinions, in which case the Opinion will be redacted to remove the identity of the requestor before being published.",
+            "modified": "1/15/15",
+            "publisher": "Board of Ethics",
+            "contactPoint": {
+                "hasEmail": "bryan.mchale@phila.gov"
+            },
+            "identifier": "54d52f5229cea01e684a0e8e",
+            "accessLevel": "Public",
+            "temporal": "12/4/2006 to the present",
+            "accrualPeriodicity": "New Opinions are posted timely upon their approval by the Board and General Counsel.",
+            "dataQuality": "Hygiene: 5 - Accuracy: 5",
+            "describedByType": "Combination of Scanned and Searchable PDFs"
+        },
+        {
+            "title": "Advice/Opinion Indices",
+            "description": "Contents: Index of Board and General Counsel Opinions including abbreviated descriptions, keywords, and citations to applicable laws and regulations. - Purpose: Guides for navigating the archive of Opinions, using keywords and citations. - Additional Comments: Currently there are separate indices for each year.",
+            "modified": "6/4/14",
+            "publisher": "Board of Ethics",
+            "contactPoint": {
+                "hasEmail": "bryan.mchale@phila.gov"
+            },
+            "identifier": "54d52f5229cea01e684a0e8f",
+            "accessLevel": "Public",
+            "temporal": "2008 to the present",
+            "accrualPeriodicity": "Yearly",
+            "dataQuality": "Hygiene: 5 - Accuracy: 5",
+            "describedByType": "Searchable PDF"
+        },
+        {
+            "title": "Campaign Finance Reports",
+            "description": "Contents: Database of campaign finance report information provided by candidates and political committees about contributions and expenditures. - Purpose:  - Additional Comments: Stored by the Department of Records",
+            "modified": "1/20/15",
+            "publisher": "Board of Ethics",
+            "contactPoint": {
+                "hasEmail": "bryan.mchale@phila.gov"
+            },
+            "identifier": "54d52f5229cea01e684a0e91",
+            "accessLevel": "Public",
+            "temporal": "2006 to the present",
+            "accrualPeriodicity": "Continuously for database, updated each reporting cycle for the ftp site.",
+            "dataQuality": "Hygiene: 4 - Accuracy: 3",
+            "describedByType": "PDF, plus TXT files on an ftp site",
+            "systemOfRecords": "Cyber/Tyler"
+        },
+        {
+            "title": "Settlement Agreements",
+            "description": "Contents: Settlement Agreements approved by the Board. - Purpose: ",
+            "modified": "12/3/14",
+            "publisher": "Board of Ethics",
+            "contactPoint": {
+                "hasEmail": "bryan.mchale@phila.gov"
+            },
+            "identifier": "54d52f5329cea01e684a0e9b",
+            "accessLevel": "Public",
+            "temporal": "2007 to the present",
+            "accrualPeriodicity": "As required",
+            "dataQuality": "Hygiene: 5 - Accuracy: 5",
+            "describedByType": "Combination of Scanned and Searchable PDFs"
+        },
+        {
+            "title": "Public Meeting Minutes",
+            "description": "Contents: Minutes approved by the Board of monthly public meetings. - Purpose: ",
+            "modified": "1/21/15",
+            "publisher": "Board of Ethics",
+            "contactPoint": {
+                "hasEmail": "bryan.mchale@phila.gov"
+            },
+            "identifier": "54d52f5329cea01e684a0e98",
+            "accessLevel": "Public",
+            "temporal": "2006 to the present",
+            "accrualPeriodicity": "Monthly",
+            "dataQuality": "Hygiene: 5 - Accuracy: 5",
+            "describedByType": "Searchable PDF"
+        },
+        {
+            "title": "Public Meeting Schedules",
+            "description": "Contents: Schedule approved by the Board of monthly public meetings for the year. - Purpose: ",
+            "modified": "December 2014",
+            "publisher": "Board of Ethics",
+            "contactPoint": {
+                "hasEmail": "bryan.mchale@phila.gov"
+            },
+            "identifier": "54d52f5329cea01e684a0e97",
+            "accessLevel": "Public",
+            "temporal": "2006 to the present",
+            "accrualPeriodicity": "Yearly",
+            "dataQuality": "Hygiene: 5 - Accuracy: 5",
+            "describedByType": "Searchable PDF"
+        },
+        {
+            "title": "Regulations",
+            "description": "Contents: Regulations approved by the Board. - Purpose:  - Additional Comments: Filed with the Department of Records",
+            "modified": "10/31/14",
+            "publisher": "Board of Ethics",
+            "contactPoint": {
+                "hasEmail": "bryan.mchale@phila.gov"
+            },
+            "identifier": "54d52f5229cea01e684a0e90",
+            "accessLevel": "Public",
+            "accrualPeriodicity": "As required",
+            "dataQuality": "Hygiene: 5 - Accuracy: 5",
+            "describedByType": "Searchable PDF"
+        },
+        {
+            "title": "Press Releases",
+            "description": "Contents: Board press releases - Purpose: General Board press releases.",
+            "publisher": "Board of Ethics",
+            "contactPoint": {
+                "hasEmail": "tina.formica@phila.gov"
+            },
+            "identifier": "54d52f5329cea01e684a0e9c",
+            "accessLevel": "Public",
+            "temporal": "2006 to the present",
+            "accrualPeriodicity": "As required",
+            "dataQuality": "Hygiene: 5 - Accuracy: 5",
+            "describedByType": "Combination of Scanned and Searchable PDFs"
+        },
+        {
+            "title": "Lobbyist Activity/Expenditures (2014 - Present)",
+            "description": "Contents: Information on lobbying activity by principals, lobbyists, and lobbying firms. - Purpose: ",
+            "modified": "NA",
+            "publisher": "Board of Ethics",
+            "contactPoint": {
+                "hasEmail": "bryan.mchale@phila.gov"
+            },
+            "identifier": "54d52f5229cea01e684a0e95",
+            "accessLevel": "Public",
+            "temporal": "2014 to the present",
+            "accrualPeriodicity": "Initial expense report updated quarterly, then updated continuously for amendments.",
+            "dataQuality": "Hygiene: 4 - Accuracy: 3",
+            "describedByType": "Searchable PDF, CSV",
+            "systemOfRecords": "Acclaim"
+        },
+        {
+            "title": "Budget Documents",
+            "description": "Contents: Materials related to annual budget process, audits, etc. - Purpose: ",
+            "modified": "NA",
+            "publisher": "Board of Ethics",
+            "contactPoint": {
+                "hasEmail": "nedda.massar@phila.gov"
+            },
+            "identifier": "54d52f5329cea01e684a0e9a",
+            "accessLevel": "As needed",
+            "rights": "Final budget document is public.",
+            "temporal": "2006 to the present",
+            "accrualPeriodicity": "Yearly",
+            "dataQuality": "Hygiene:  - Accuracy: ",
+            "describedByType": "Multiple"
+        },
+        {
+            "title": "Financial Disclosure Statements",
+            "description": "Contents: Statements of Financial Interest required either by the Ethics Code, the Mayor's Executive Order, and/or the State Ethics Act. - Purpose:  - Additional Comments: Stored by the Department of Records",
+            "modified": "NA",
+            "publisher": "Board of Ethics",
+            "contactPoint": {
+                "hasEmail": "bryan.mchale@phila.gov"
+            },
+            "identifier": "54d52f5229cea01e684a0e96",
+            "accessLevel": "Public",
+            "accrualPeriodicity": "Yearly",
+            "dataQuality": "Hygiene: 4 - Accuracy: 3",
+            "describedByType": "Scanned PDF, plus 87% electronically filed in a Database",
+            "systemOfRecords": "Cyber/Tyler"
+        },
+        {
+            "title": "Public Hearing Transcripts",
+            "description": "Contents: Transcripts of public hearings held by the Board as part of the process of creating and amending regulations. - Purpose: Public Hearings are required to provide the public with an opportunity to offer testimony upon new or amended Regulations.  The Transcripts are appended to the official Hearing Report. - Additional Comments: Stored by the Department of Records",
+            "modified": "NA",
+            "publisher": "Board of Ethics",
+            "contactPoint": {
+                "hasEmail": "bryan.mchale@phila.gov"
+            },
+            "identifier": "54d52f5329cea01e684a0e99",
+            "accessLevel": "Public",
+            "temporal": "2006 to the present",
+            "accrualPeriodicity": "As required",
+            "dataQuality": "Hygiene: 5 - Accuracy: 5",
+            "describedByType": "Scanned PDF"
+        },
+        {
+            "title": "Candidate Registration Statements",
+            "description": "Contents: This is a form filed when a candidate registers to run in an election. - Purpose: These forms are required to be filed with our office by under state law. Externally, potential candidates and campaigns may find this information useful when considering their opponents.",
+            "publisher": "City Commissioners Office",
+            "contactPoint": {
+                "hasEmail": "seth.bluestein@phila.gov"
+            },
+            "identifier": "54d52f5029cea01e684a0e75",
+            "accessLevel": "Public",
+            "temporal": "2008-Present",
+            "accrualPeriodicity": "When individuals file to become candidates, usually prior to each Election",
+            "dataQuality": "Hygiene: 3 - Accuracy: 5",
+            "describedByType": "Paper or PDF",
+            "systemOfRecords": "County Board of Elections/Campaign Finance"
+        },
+        {
+            "title": "Corridor Cleaning Grant Guidelines & Restrictions",
+            "description": "Contents: A description of the program, requirements, outcomes, and qualifications - Purpose: This information is used by non-profit organizations that wish to apply for funding",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "tiffany.justice@phila.gov"
+            },
+            "identifier": "54d52f5329cea01e684a0ea1",
+            "temporal": "annually",
+            "dataQuality": "Hygiene:  - Accuracy: ",
+            "describedByType": "database",
+            "systemOfRecords": "ACIS"
+        },
+        {
+            "title": "OEO Annual Report for all Public Works Contracts",
+            "description": "Contents: Committed amounts of minority and women owned business participation on City contracts across all departments, regardless of contract value - Purpose: Monitoring and oversight",
+            "modified": "9/1/14",
+            "publisher": "Commerce Department",
+            "identifier": "54d52f5329cea01e684a0ea4",
+            "temporal": "2009-present",
+            "accrualPeriodicity": "Updated quarterly",
+            "dataQuality": "Hygiene: 4 - Accuracy: 4",
+            "describedByType": "Excel",
+            "systemOfRecords": "Excel, B2GNow, City payment systems"
+        },
+        {
+            "title": "Corridor Cleaning Grant Outcomes",
+            "description": "Contents: number of trash bags collected and number of problems/complaints reported to 311 - Purpose: Data is used to report to HUD, city officals, and funders",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "tiffany.justice@phila.gov"
+            },
+            "identifier": "54d52f5529cea01e684a0eb3",
+            "temporal": "annually",
+            "dataQuality": "Hygiene:  - Accuracy: ",
+            "describedByType": "excel",
+            "systemOfRecords": "shared drive"
+        },
+        {
+            "title": "Empowerment Zone Neighborhood Funding Stream Program Balances",
+            "description": "Contents: Funding related information for assets managed internally or by a 3rd party such as Vanguard - Purpose: ",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "Aiisha.G.Herring@phila.gov"
+            },
+            "identifier": "54d52f5629cea01e684a0eb9",
+            "dataQuality": "Hygiene:  - Accuracy: "
+        },
+        {
+            "title": "Empowerment Zone Neighborhood Funding Stream Program Grant Recipients",
+            "description": "Contents: Recipients of Empowerment Zone Grant monies, the awarded amount, and address of the organization. - Purpose: ",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "Aiisha.G.Herring@phila.gov"
+            },
+            "identifier": "54d52f5629cea01e684a0eba",
+            "dataQuality": "Hygiene:  - Accuracy: "
+        },
+        {
+            "title": "Business Technical Assistance Program Grant Guidelines & Qualifications",
+            "description": "Contents: A description of the program, requirements, outcomes, and qualifications - Purpose: This information is used by non-profit organization that wish to apply for funding",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "natalie.c.jackson@phila.gov"
+            },
+            "identifier": "54d52f5329cea01e684a0ea0",
+            "accessLevel": "Private",
+            "rights": "once a contract is award, data ca be seen by other city departments",
+            "temporal": "annually",
+            "accrualPeriodicity": "annually",
+            "dataQuality": "Hygiene:  - Accuracy: 5",
+            "describedByType": "database",
+            "systemOfRecords": "ACIS"
+        },
+        {
+            "title": "InStore Grant Outcomes",
+            "description": "Contents: Contains information about the applicant, business, project, and costs. - Purpose: Used for tracking new, ongoing, and completed projects; including tracking amounts paid.",
+            "modified": "12/1/14",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "jonathan.snyder@phila.gov"
+            },
+            "identifier": "54d52f5429cea01e684a0eaa",
+            "accessLevel": "Private",
+            "rights": "The data can be shared, but the database itself should not be",
+            "temporal": "Since 2013",
+            "accrualPeriodicity": "Weekly",
+            "dataQuality": "Hygiene: 4 - Accuracy: 5",
+            "describedByType": "MS Access",
+            "systemOfRecords": "Shared Drive"
+        },
+        {
+            "title": "Real Estate Development Checklist",
+            "description": "Contents: A checklist of most common permits and reviews for large-scale development in the city. - Purpose: A resource to share with developers we meet with as well as an online resource for a developer of any scale. - Additional Comments: This checklist is still in development. The draft is being vetted by the various departments that are referenced.",
+            "modified": "Still in development",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "emily.giordano@phila.gov"
+            },
+            "identifier": "54d52f5329cea01e684a0e9f",
+            "accessLevel": "Public",
+            "rights": "Data can be shared internally and with the public.",
+            "temporal": "N/A",
+            "accrualPeriodicity": "TBD",
+            "dataQuality": "Hygiene:  - Accuracy: 4",
+            "systemOfRecords": "Word Document"
+        },
+        {
+            "title": "Storefront Improvement Grant Outcomes",
+            "description": "Contents: Contains information about the applicant, business, project, and costs. - Purpose: Used for tracking new, ongoing, and completed projects; including tracking amounts paid.",
+            "modified": "12/1/14",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "giana.lawrence@phila.gov"
+            },
+            "identifier": "54d52f5329cea01e684a0ea7",
+            "accessLevel": "Private",
+            "rights": "The data can be shared, but the database itself should not be",
+            "temporal": "Since 2009",
+            "accrualPeriodicity": "Weekly",
+            "dataQuality": "Hygiene: 4 - Accuracy: 5",
+            "describedByType": "MS Access",
+            "systemOfRecords": "Shared Drive"
+        },
+        {
+            "title": "Agency Specific Participation Reports",
+            "description": "Contents: Data collected from payment systems to assess the amounts committed to M/W/DSBEs. - Purpose: Eventually published as part of the OEO annual report.",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "sung.park@phila.gov"
+            },
+            "identifier": "54d52f5429cea01e684a0ead",
+            "accrualPeriodicity": "Quarterly",
+            "dataQuality": "Hygiene: 4 - Accuracy: 4",
+            "describedByType": "Spreadsheet",
+            "systemOfRecords": "Excel, B2GNow, City payment systems"
+        },
+        {
+            "title": "Annual Disparity Report",
+            "description": "Contents: Primarily the data from the participation report and EOP report, analyzed and translated into summary statistics - Purpose: To establish appropriate goal levels for City contracts. Disparity is caclulated by by dividing utilization of M/W/DSBE firms by availibility of M/W/DSBE firms to develop an index; index greater than 1 is overutilization, less than 1 is underutilization.",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "sung.park@phila.gov (internal); Huang@econsultSolutions.com (consultant)"
+            },
+            "identifier": "54d52f5529cea01e684a0eb4",
+            "temporal": "Given fiscal year of the report",
+            "accrualPeriodicity": "Report published annually, data maintained constantly",
+            "dataQuality": "Hygiene: 4 - Accuracy: 4",
+            "describedByType": "Spreadsheet",
+            "systemOfRecords": "Internally Excel, externally STATA and Excel"
+        },
+        {
+            "title": "Annual EOP Report",
+            "description": "Contents: Includes the average participation of minority and woman owned businesses (M/WBEs) on City, Private/Non Profit, and quasi-public projects. For Private/NP lists the name of the project, construction dates, cost, committed participation and actual participation; for City projects lists the name of the project, construction dates, cost, prime and sub contractors, committed participation and actual participation; for quasi-public projects lists the name of the project, cost, comitted participation and actual participation. For all projects the difference between commited and actual participation is calculated and listed as the \"variance.\" - Purpose: This information is used to guage inclusion performance by City departments, prime contractors, private and NP project owners, and quasi-public departments. This information also informs OEO's goal setting for certain projects.",
+            "modified": "12/1/14",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "nicholas.jann@phila.gov"
+            },
+            "identifier": "54d52f5529cea01e684a0eae",
+            "temporal": "2009-present",
+            "accrualPeriodicity": "For commitment numbers, as often as new EOPs are generated -- sometimes weekly. For actual performance numbers, annually for City and quasi-public departments (though OEO is trying to figure out a way to make this more frequent) and quarterly for private/NP.",
+            "dataQuality": "Hygiene: 4 - Accuracy: 4",
+            "describedByType": "Spreadsheet",
+            "systemOfRecords": "Excel and Google"
+        },
+        {
+            "title": "Business Service Manager Activities",
+            "description": "Contents: Containts information about the address, company, and reason for inquiry. - Purpose: Used for internal tracking, resource deployment, and reporting - Additional Comments: Client information received via hotline is voluntary, therefore complete information may not be obtained",
+            "modified": "12/12/15",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "justine.bolkus@phila.gov"
+            },
+            "identifier": "54d52f5429cea01e684a0eac",
+            "accessLevel": "Private",
+            "temporal": "Since 2010",
+            "accrualPeriodicity": "Daily",
+            "dataQuality": "Hygiene: 1 - Accuracy: 3",
+            "describedByType": "Can be exported to spreadsheet/csv file",
+            "systemOfRecords": "Quickbase"
+        },
+        {
+            "title": "Business Technical Assistance Program Grant Outcomes",
+            "description": "Contents: # served that recieve technical assistance, loans, or create jobs:  1) low to low moderate income residents who want to start or expand a micro-enterprise and 2) businesses that serve low to low moderate income residents who are micro-entrprises  - Purpose: Data is used to report to HUD, city officals, and funders",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "natalie.c.jackson@phila.gov"
+            },
+            "identifier": "54d52f5329cea01e684a0e9e",
+            "temporal": "annually",
+            "dataQuality": "Hygiene:  - Accuracy: ",
+            "describedByType": "database",
+            "systemOfRecords": "google cloud"
+        },
+        {
+            "title": "Community Oversight Committee Notes",
+            "description": "Contents: Reports provided by third party constultants on M/W/DSBE and workforce participation on private/NP projects with EOPs - Purpose: Monitoring and oversight",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "william.clark@phila.gov"
+            },
+            "identifier": "54d52f5529cea01e684a0eb5",
+            "temporal": "Circa 2012-present",
+            "accrualPeriodicity": "Quarterly",
+            "dataQuality": "Hygiene: 3 - Accuracy: 4",
+            "describedByType": "Physical and scanned copies; spreadsheet",
+            "systemOfRecords": "Physical and scanned copies, information is being entered into EOP database"
+        },
+        {
+            "title": "Corridor Management Grant Guidelines & Restrictions",
+            "description": "Contents: A description of the program, requirements, outcomes, and qualifications - Purpose: This information is used by non-profit organizations that wish to apply for funding",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "joane.celestin@phila.gov"
+            },
+            "identifier": "54d52f5729cea01e684a0ebb",
+            "dataQuality": "Hygiene:  - Accuracy: "
+        },
+        {
+            "title": "Corridor Management Grants Outcomes",
+            "description": "Contents: Performance metrics for the organizations participating in the corridor management grant program, reported to Commerce quarterly by grant recipients. - Purpose: Data is used to report to HUD, city officals, and funders",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "joane.celestin@phila.gov"
+            },
+            "identifier": "54d52f5729cea01e684a0ebc",
+            "dataQuality": "Hygiene:  - Accuracy: "
+        },
+        {
+            "title": "InStore Grant Guidelines & Restrictions",
+            "description": "Contents: A description of the program, requirements, outcomes, and qualifications - Purpose: This information is used to market to and inform entities that wish to apply for funding",
+            "modified": "12/1/14",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "jonathan.snyder@phila.gov"
+            },
+            "identifier": "54d52f5329cea01e684a0ea9",
+            "accessLevel": "Private",
+            "rights": "The data can be shared, but the database itself should not be",
+            "temporal": "Since 2013",
+            "accrualPeriodicity": "Weekly",
+            "dataQuality": "Hygiene: 4 - Accuracy: 5",
+            "describedByType": "MS Access",
+            "systemOfRecords": "Shared Drive"
+        },
+        {
+            "title": "NED Grant Program Funded Projects",
+            "description": "Contents: Contains information about the applicant, business, project, and costs. - Purpose: Used for tracking status of projects (that are often multi-year).",
+            "modified": "9/1/14",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "terrine.datts@phila.gov"
+            },
+            "identifier": "54d52f5429cea01e684a0eab",
+            "temporal": "since 2008",
+            "accrualPeriodicity": "updated quarterly",
+            "dataQuality": "Hygiene:  - Accuracy: "
+        },
+        {
+            "title": "Quasi City Agency EOP Reporting",
+            "description": "Contents: List of projects originating within OHCD/PRA (Office of Housing & Community Development/Philadelphia Redevelopment Authority) that require EOPs. Includes estimated budget of projects, goals for and actual participation of M/W/DSBE firms on those projects. - Purpose: Monitoring and oversight. Also included in the EOP report.",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "nicholas.jann@phila.gov"
+            },
+            "identifier": "54d52f5529cea01e684a0eb1",
+            "temporal": "Circa 2009-present",
+            "dataQuality": "Hygiene:  - Accuracy: ",
+            "systemOfRecords": "Excel"
+        },
+        {
+            "title": "Storefront Improvement Grants Guidelines & Restrictions",
+            "description": "Contents: A description of the program, requirements, outcomes, and qualifications - Purpose: This information is used to market to and inform entities that wish to apply for funding",
+            "modified": "12/1/14",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "giana.lawrence@phila.gov"
+            },
+            "identifier": "54d52f5329cea01e684a0ea8",
+            "accessLevel": "Private",
+            "rights": "The data can be shared, but the database itself should not be",
+            "temporal": "Since 2009",
+            "accrualPeriodicity": "Weekly",
+            "dataQuality": "Hygiene: 4 - Accuracy: 5",
+            "describedByType": "MS Access",
+            "systemOfRecords": "Shared Drive"
+        },
+        {
+            "title": "Streetscape Projects/Capital Improvement Guidelines & Restrictions",
+            "description": "Contents: Capital Funding Guidelines, One page program description, Process description and list of recently completed and projects underway - Purpose: Used for tracking new, ongoing, and completed projects",
+            "modified": "1/10/15",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "Denis.Murphy@phila.gov"
+            },
+            "identifier": "54d52f5329cea01e684a0ea3",
+            "rights": "Data can be shared internally. May need to be formatted in a more user friendly way to be publicly shared",
+            "temporal": "Since 2008",
+            "accrualPeriodicity": "Monthly",
+            "dataQuality": "Hygiene: 3 - Accuracy: 4",
+            "describedByType": "pdfs, and excel spreadsheet",
+            "systemOfRecords": "Shared Drive"
+        },
+        {
+            "title": "Streetscape Projects/Capital Improvement Outcomes",
+            "description": "Contents:  - Purpose:  - Additional Comments: Finance required an ROI analysis from us as a pilot and will be requiring this in upcoming years",
+            "modified": "1/1/14",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "Denis.Murphy@phila.gov"
+            },
+            "identifier": "54d52f5629cea01e684a0eb7",
+            "rights": "Data can be shared internally. May need to be formatted in a more user friendly way to be publicly shared",
+            "temporal": "2013",
+            "accrualPeriodicity": "Not updated, but may be required again",
+            "dataQuality": "Hygiene: 2 - Accuracy: 2",
+            "describedByType": "excel spreadsheets",
+            "systemOfRecords": "Shared Drive"
+        },
+        {
+            "title": "Survey Data",
+            "description": "Contents: Information provided by the Corridor Management Grant Recipients regarding commercial vacancy, building conditions, commercial uses, and overall condition of the commercial corridor. - Purpose: Used for internal tracking, resource deployment, and reporting",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "joane.celestin@phila.gov"
+            },
+            "identifier": "54d52f5729cea01e684a0ebd",
+            "dataQuality": "Hygiene:  - Accuracy: "
+        },
+        {
+            "title": "Security Camera Incentive Program",
+            "description": "Contents: Information regarding the # of recipients of grant monies for the Business Security Camera Program.  - Purpose: Used for tracking new, ongoing, and completed projects; including tracking amounts paid. - Additional Comments: Names/Addresses of camera locations cannot be made public.",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "Linda.Lawrence@phila.gov"
+            },
+            "identifier": "54d52f5729cea01e684a0ebe",
+            "dataQuality": "Hygiene:  - Accuracy: "
+        },
+        {
+            "title": "Minority Owned Business Registry",
+            "description": "Contents: A list of businesses that are recognized by the City as minority, women, or disabled-owned. The list ranges from contractors and construction firms to proffesional services to food service. The registry is maintained by Alice Dungee James. - Purpose: The OEO specialists use the registry to inform their goal setting on City projects. The registry is also used as a resource in looking for firms that provide a particular service.",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "alice.dungee@phila.gov"
+            },
+            "identifier": "54d52f5329cea01e684a0ea2",
+            "temporal": "2009-current",
+            "accrualPeriodicity": "As Requested",
+            "dataQuality": "Hygiene: 4 - Accuracy: 4",
+            "describedByType": "Database",
+            "systemOfRecords": "B2GNow"
+        },
+        {
+            "title": "Business Attraction & Retention Completed Projects",
+            "description": "Contents: Companies that the Business Attraction and Rention unit has actively worked with to facilitate coming to the City - Purpose: Development Initiatives unit of Commerce",
+            "modified": "Ongoing",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "samuel.siegel@phila.gov"
+            },
+            "identifier": "54d52f5329cea01e684a0ea5",
+            "accessLevel": "Public",
+            "temporal": "2012 to present",
+            "accrualPeriodicity": "Ongoing",
+            "dataQuality": "Hygiene: 3 - Accuracy: 5",
+            "describedByType": "can be exported to .csv",
+            "systemOfRecords": "Quickbase"
+        },
+        {
+            "title": "KOZ Program Applications",
+            "description": "Contents: List of applicants to the State's KOZ program, includes date of application, date of acceptance/rejection, amount of investment, number of jobs reported at the close of the year - Purpose: KOZ corrdinator uses this data to track administrative todos, as well as some outcomes",
+            "modified": "Currently undergoing updates since we're in an active application period",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "vincent.dougherty@phila.gov"
+            },
+            "identifier": "54d52f5529cea01e684a0eb0",
+            "rights": "Sharable, although some company information may not be public",
+            "accrualPeriodicity": "Updated annually as needed throughout the multi-month applciation process",
+            "dataQuality": "Hygiene: 5 - Accuracy: ",
+            "describedByType": "Excel",
+            "systemOfRecords": "Excel"
+        },
+        {
+            "title": "Selected Real Estate Development Projects",
+            "description": "Contents: Contains information about the address, company, square footage, project costs and project status for select developments. This is a record of significant projects related to economic development in Philadelphia. - Purpose: Internal tracking of current and completed large scale real estate development projects. - Additional Comments: Not a complete list of active development projects gleaned from multiple sources, including media reports",
+            "modified": "12/15/14",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "emily.giordano@phila.gov"
+            },
+            "identifier": "54d52f5329cea01e684a0ea6",
+            "accessLevel": "Public",
+            "temporal": "2012 to present, with some projects back to 2010",
+            "accrualPeriodicity": "Semi-annually",
+            "dataQuality": "Hygiene: 3 - Accuracy: 3",
+            "describedByType": "Can be exported to spreadsheet/csv file",
+            "systemOfRecords": "Quickbase"
+        },
+        {
+            "title": "Real Estate Development Committee Meeting Participants",
+            "description": "Contents: 5-10 projects a year are presented in front of a committee of PECO, Streets, L&I, the Governor's Action Team, etc. These meetings coordinate department responses to real estate development projects and include discussions of plans and obstacles in development. A full list of Committee Members is available at http://www.phila.gov/commerce/realEstate/developerServices/Pages/DeveloperServicesCommittee.aspx  - Purpose: Developer Services uses this information to track and assist projects.",
+            "publisher": "Commerce Department",
+            "contactPoint": {
+                "hasEmail": "emily.giordano@phila.gov"
+            },
+            "identifier": "54d52f5629cea01e684a0eb6",
+            "accessLevel": "Public",
+            "accrualPeriodicity": "Monthly, as needed",
+            "dataQuality": "Hygiene:  - Accuracy: ",
+            "describedByType": "Word Document"
+        },
+        {
+            "title": "OEM Deployments",
+            "description": "Contents: Deployment locations - Purpose: Emergency planning - situational awareness - Additional Comments: OEM_DEPLOYMENTS",
+            "modified": "11/1/14",
+            "publisher": "Office of Emergency Management",
+            "contactPoint": {
+                "hasEmail": "daniel.bradley@phila.gov"
+            },
+            "identifier": "54d52f5229cea01e684a0e8d",
+            "accessLevel": "Public",
+            "rights": "Removal of some features would make this approved for public release.",
+            "temporal": "2007-Present",
+            "accrualPeriodicity": "Monthly",
+            "dataQuality": "Hygiene: 4 - Accuracy: 4",
+            "describedByType": "FeatureClass - Poly",
+            "systemOfRecords": "OEM Geodatabase"
+        },
+        {
+            "title": "Community Locations",
+            "description": "Contents: This data set shows locations of community facilities throughout the City of Philadelphia that require special consideration in assessing an emergency. - Purpose: Emergency planning - situational awareness",
+            "modified": "UNK",
+            "publisher": "Office of Emergency Management",
+            "contactPoint": {
+                "hasEmail": "daniel.bradley@phila.gov"
+            },
+            "identifier": "54d52f5229cea01e684a0e8c",
+            "accessLevel": "Enterprise",
+            "rights": "Data set requires field removals",
+            "dataQuality": "Hygiene:  - Accuracy: ",
+            "describedByType": "FeatureClass-Point",
+            "systemOfRecords": "OEM Geodatabase"
+        },
+        {
+            "title": "CIKR - Critical Infrastructure (Private)",
+            "description": "Contents: Critical Infrastructure are the assets, systems, and networks, whether physical or virtual, so vital to the United States that their incapacitation or destruction would have a debilitating effect on security, national economic security, public health or safety, or any combination thereof. Key Resources are publicly or privately controlled resources essential to the minimal operations of the economy and government.The PrimarySector field organizes these data into DHS defined asset categories. - Purpose: Emergency planning - situational awareness - Additional Comments: CIKR",
+            "modified": "6/8/12",
+            "publisher": "Office of Emergency Management",
+            "contactPoint": {
+                "hasEmail": "daniel.bradley@phila.gov"
+            },
+            "identifier": "54d52f5229cea01e684a0e8b",
+            "accessLevel": "Private",
+            "rights": "FOUO: Need to know",
+            "dataQuality": "Hygiene:  - Accuracy: ",
+            "describedByType": "FeatureClass-Point",
+            "systemOfRecords": "OEM Geodatabase"
+        },
+        {
+            "title": "Election Board Training",
+            "description": "Contents: This data set is currently the number of individuals who attended a particular location for training. An aspirational aspect of this data is to organize it by the individual's location or by the time of the seminar. - Purpose: This data is used to track the number of people attending trainings, project costs of training, and assess the effectiveness of providing certain days and timeslots for training.",
+            "modified": "2014 General",
+            "publisher": "City Commissioners Office",
+            "contactPoint": {
+                "hasEmail": "seth.bluestein@phila.gov"
+            },
+            "identifier": "54d52f5029cea01e684a0e76",
+            "accessLevel": "Public",
+            "temporal": "Present",
+            "accrualPeriodicity": "Each week training is scheduled, usually a two month period leading up to each election",
+            "dataQuality": "Hygiene: 4 - Accuracy: 4",
+            "describedByType": "Paper or Excel",
+            "systemOfRecords": "Election Boards Unit"
+        },
+        {
+            "title": "Machine Results",
+            "description": "Contents: This data set is currently a text file of the machine vote election results. In the near future the data will be available on a web application and can be downloaded as a csv or excel file. - Purpose: The election results from the machines are used to compile the overall election results used to certify the election. This data is also used by candidates and campaigns.",
+            "modified": "2014 General",
+            "publisher": "City Commissioners Office",
+            "contactPoint": {
+                "hasEmail": "seth.bluestein@phila.gov"
+            },
+            "identifier": "54d52f5029cea01e684a0e77",
+            "accessLevel": "Public",
+            "temporal": "2002-Present",
+            "accrualPeriodicity": "After each Election",
+            "dataQuality": "Hygiene: 5 - Accuracy: 5",
+            "describedByType": "Paper or Excel",
+            "systemOfRecords": "Election Day Activities"
+        },
+        {
+            "title": "Voting Machine Warehouse Database",
+            "description": "Contents: This data set is a spreadsheet of the number of machines sent to each division. - Purpose: This data is used to haul the proper machines to each polling place and to determine how many Machine Inspectors are allowed for each division.",
+            "modified": "2014 General",
+            "publisher": "City Commissioners Office",
+            "contactPoint": {
+                "hasEmail": "seth.bluestein@phila.gov"
+            },
+            "identifier": "54d52f5029cea01e684a0e79",
+            "accessLevel": "Public",
+            "accrualPeriodicity": "Prior to each Election",
+            "dataQuality": "Hygiene: 3 - Accuracy: 5",
+            "describedByType": "Paper or Excel",
+            "systemOfRecords": "Voter Machine Warehouse"
+        },
+        {
+            "title": "Election Results for Committee People",
+            "description": "Contents: This data set is a list of elected Committee People by ward, division, and party. - Purpose: This data is used to certify the election for Committeeperson and is used by the politicial parties to organize.",
+            "modified": "2014 Primary",
+            "publisher": "City Commissioners Office",
+            "contactPoint": {
+                "hasEmail": "seth.bluestein@phila.gov"
+            },
+            "identifier": "54d52f5029cea01e684a0e7a",
+            "accessLevel": "Public",
+            "temporal": "2014 (electronically) 2010 (Paper)",
+            "accrualPeriodicity": "Updated once every four years after each election for Committeeperson",
+            "dataQuality": "Hygiene: 5 - Accuracy: 5",
+            "describedByType": "Paper or Excel",
+            "systemOfRecords": "County Board of Elections"
+        },
+        {
+            "title": "Elected/Court Appointment Results for the Election Board",
+            "description": "Contents: This data set is a collection of the elected and court appointed Election Board Officials - Purpose: Internally, this data is used to identify where there may be vacancies or a shortage of board workers in divisions across the city. Externally, this data is sued to identify vacancies to get court appointments.",
+            "modified": "10/22/14",
+            "publisher": "City Commissioners Office",
+            "contactPoint": {
+                "hasEmail": "seth.bluestein@phila.gov"
+            },
+            "identifier": "54d52f5029cea01e684a0e7b",
+            "accessLevel": "Public",
+            "temporal": "2013-Present (electronic) 2009-2013 (Paper)",
+            "accrualPeriodicity": "When individuals resign or are appointed, usually prior to each Election",
+            "dataQuality": "Hygiene: 5 - Accuracy: 4",
+            "describedByType": "Paper or Excel",
+            "systemOfRecords": "County Board of Elections"
+        },
+        {
+            "title": "Absentee Ballots Requested/Returned",
+            "description": "Contents: This data set is a collection of names and numbers of individuals who requested and/or returned Absentee Ballots in a particular election. This data can be broken down at various geographic levels. - Purpose: Internally, the data is used to keep track of how many absentee ballots are being processed. The level of interest in absentee ballots may be an indication of the expected turnout for Election Day. Externally, campaigns may be interested in this data to target voters who are in the process of voting by absentee ballot.",
+            "modified": "2014 General",
+            "publisher": "City Commissioners Office",
+            "contactPoint": {
+                "hasEmail": "seth.bluestein@phila.gov"
+            },
+            "identifier": "54d52f5029cea01e684a0e7d",
+            "accessLevel": "Enterprise",
+            "rights": "Serialize/Anonymize individuals' information",
+            "temporal": "2002-Present",
+            "accrualPeriodicity": "Daily during Election Periods",
+            "dataQuality": "Hygiene: 5 - Accuracy: 5",
+            "describedByType": "Paper or Excel",
+            "systemOfRecords": "County Board of Elections"
+        },
+        {
+            "title": "Provisional Ballot Results",
+            "description": "Contents: This data set includes the election results of voters who voted by Provisional Ballot in a particular election. This data can be broken down at various geographic levels. - Purpose: The election results from the provisional ballots are used to compile the overall election results used to certify the election. This data is also used by candidates and campaigns.",
+            "modified": "2014 General",
+            "publisher": "City Commissioners Office",
+            "contactPoint": {
+                "hasEmail": "seth.bluestein@phila.gov"
+            },
+            "identifier": "54d52f5029cea01e684a0e7e",
+            "accessLevel": "Public",
+            "temporal": "2002-Present",
+            "accrualPeriodicity": "After each Election",
+            "dataQuality": "Hygiene: 5 - Accuracy: 5",
+            "describedByType": "Paper or Excel",
+            "systemOfRecords": "Election Day Activities"
+        },
+        {
+            "title": "Provisional Ballot Breakdown",
+            "description": "Contents: This data set conains the number of provisional ballots submitted. It can be broken down by category and outcome. - Purpose: This information is submitted to the Department of State.",
+            "modified": "2014 General",
+            "publisher": "City Commissioners Office",
+            "contactPoint": {
+                "hasEmail": "seth.bluestein@phila.gov"
+            },
+            "identifier": "54d52f5129cea01e684a0e81",
+            "accessLevel": "Public",
+            "accrualPeriodicity": "After each Election",
+            "dataQuality": "Hygiene: 4 - Accuracy: 4",
+            "describedByType": "Paper or Excel",
+            "systemOfRecords": "Imaging/SURE Portal"
+        },
+        {
+            "title": "Candidates",
+            "description": "Contents: This data set can be collected in a way to include the names and numbers of candidates. This data can be broken down at various geographic levels. - Purpose: Internally, this information is used to create the ballot. Externally, candidates and campaigns will want to know who their opponents are.",
+            "modified": "2014 General",
+            "publisher": "City Commissioners Office",
+            "contactPoint": {
+                "hasEmail": "seth.bluestein@phila.gov"
+            },
+            "identifier": "54d52f5129cea01e684a0e82",
+            "accessLevel": "Public",
+            "temporal": "2002-Present (electronic) 1936-Present (Paper)",
+            "accrualPeriodicity": "Prior to each Election",
+            "dataQuality": "Hygiene: 5 - Accuracy: 5",
+            "describedByType": "Paper or Excel",
+            "systemOfRecords": "County Board of Elections"
+        },
+        {
+            "title": "Poll Watcher Certificates",
+            "description": "Contents: This data are in the format of requests (excel, fax, handwritten). Can be organized by request or by the geographic location of the recipient of the certificate. - Purpose: This data is used to create and track Poll Watcher Certificates. Candidates and Campaigns may be interested in this information to see where their opponents are placing poll watchers.",
+            "modified": "2014 General",
+            "publisher": "City Commissioners Office",
+            "contactPoint": {
+                "hasEmail": "seth.bluestein@phila.gov"
+            },
+            "identifier": "54d52f5129cea01e684a0e85",
+            "accessLevel": "Public",
+            "temporal": "Last 4 years +",
+            "accrualPeriodicity": "Prior to each Election",
+            "dataQuality": "Hygiene: 1 - Accuracy: 5",
+            "describedByType": "Paper",
+            "systemOfRecords": "Election Day Activities"
+        },
+        {
+            "title": "Petition Signatures",
+            "description": "Contents: This data are in the format of forms that are filled out by hand. They contain names, addresses, and signatures for individuals who signed petitions to get candidates on the ballot. - Purpose: This data is used to determine if an individual is able to get on the ballot. Candidates use this informatio to challenge potential opponents.",
+            "modified": "2014 General",
+            "publisher": "City Commissioners Office",
+            "contactPoint": {
+                "hasEmail": "seth.bluestein@phila.gov"
+            },
+            "identifier": "54d52f5129cea01e684a0e86",
+            "accessLevel": "Public",
+            "temporal": "Last 4 years",
+            "accrualPeriodicity": "Prior to each Election",
+            "dataQuality": "Hygiene: 2 - Accuracy: 5",
+            "describedByType": "Paper",
+            "systemOfRecords": "County Board of Elections"
+        },
+        {
+            "title": "Streets List",
+            "description": "Contents: Street lists are paper copies of all registered voters broken down by division, in street and house order. - Purpose: Street lists are used by campaigns and political parties to reach voters.",
+            "modified": "2014 General",
+            "publisher": "City Commissioners Office",
+            "contactPoint": {
+                "hasEmail": "seth.bluestein@phila.gov"
+            },
+            "identifier": "54d52f5129cea01e684a0e87",
+            "accessLevel": "Enterprise",
+            "accrualPeriodicity": "Prior to each Election",
+            "dataQuality": "Hygiene: 4 - Accuracy: 5",
+            "describedByType": "Paper",
+            "systemOfRecords": "Documents Unit"
+        },
+        {
+            "title": "Election Payroll Check Registry",
+            "description": "Contents: See Election Board Officials who worked on Election Day. - Purpose: This data is used to pay Election Board Workers and track when checks are issued in case they are not received by the worker.",
+            "modified": "2014 General",
+            "publisher": "City Commissioners Office",
+            "contactPoint": {
+                "hasEmail": "seth.bluestein@phila.gov"
+            },
+            "identifier": "54d52f5129cea01e684a0e88",
+            "accessLevel": "Public",
+            "temporal": "2000-Present",
+            "accrualPeriodicity": "After each Election",
+            "dataQuality": "Hygiene: 5 - Accuracy: 4",
+            "describedByType": "Paper",
+            "systemOfRecords": "Budget Office"
+        },
+        {
+            "title": "Amount of Money Raised",
+            "description": "Contents: Currently this data is available for the amount of money raised by each candidate or Political Action Committee. An aspirational aspect of this data is to compile it in a way that allows for an analysis of the amount of money raised from each donor across multiple candidates. - Purpose: These reports are required to be filed with our office by under state law. Externally, potential candidates and campaigns may find this information useful when considering the finances of their opponents.",
+            "modified": "2/2/15",
+            "publisher": "City Commissioners Office",
+            "contactPoint": {
+                "hasEmail": "seth.bluestein@phila.gov"
+            },
+            "identifier": "54d52f5229cea01e684a0e89",
+            "accessLevel": "Public",
+            "temporal": "2008-Present",
+            "accrualPeriodicity": "7 Cycles each Year",
+            "dataQuality": "Hygiene: 3 - Accuracy: 5",
+            "describedByType": "Paper or PDF",
+            "systemOfRecords": "County Board of Elections/Campaign Finance"
+        },
+        {
+            "title": "Amount of Money Expended",
+            "description": "Contents: Currently this data is available for the amount of money expended by each candidate or Political Action Committee. An aspirational aspect of this data is to compile it in a way that allows for an analysis of the amount of money expended on each vendor across multiple candidates. - Purpose: These reports are required to be filed with our office by under state law. Externally, potential candidates and campaigns may find this information useful when considering the finances of their opponents.",
+            "modified": "2/2/15",
+            "publisher": "City Commissioners Office",
+            "contactPoint": {
+                "hasEmail": "seth.bluestein@phila.gov"
+            },
+            "identifier": "54d52f5229cea01e684a0e8a",
+            "accessLevel": "Public",
+            "temporal": "2008-Present",
+            "accrualPeriodicity": "7 Cycles each Year",
+            "dataQuality": "Hygiene: 3 - Accuracy: 5",
+            "describedByType": "Paper or PDF",
+            "systemOfRecords": "County Board of Elections/Campaign Finance"
+        },
+        {
+            "title": "Absentee Ballot Results",
+            "description": "Contents: This data set includes the election results of voters who voted by Absentee Ballot in a particular election. This data can be broken down at various geographic levels. - Purpose: Internally, this data is used to calculate the overall election results. Externally, this data can be used for preparation for future elections to target voters.",
+            "modified": "2014 General",
+            "publisher": "City Commissioners Office",
+            "contactPoint": {
+                "hasEmail": "seth.bluestein@phila.gov"
+            },
+            "identifier": "54d52f5029cea01e684a0e7f",
+            "accessLevel": "Public",
+            "temporal": "2002-Present",
+            "accrualPeriodicity": "After each Election",
+            "dataQuality": "Hygiene: 5 - Accuracy: 5",
+            "describedByType": "Paper or Excel",
+            "systemOfRecords": "Election Day Activities"
+        },
+        {
+            "title": "Election Results",
+            "description": "Contents: This data set is currently a text file of the election results. In the near future the data will be available on a web application and can be downloaded as a csv or excel file. - Purpose: This data is used to certify the election and can be used by potential campaigns and candidates to asses electoral chances for the future.",
+            "modified": "2014 General",
+            "publisher": "City Commissioners Office",
+            "contactPoint": {
+                "hasEmail": "seth.bluestein@phila.gov"
+            },
+            "identifier": "54d52f5029cea01e684a0e78",
+            "accessLevel": "Public",
+            "temporal": "2002-Present (electronically) 1936-Present (Paper)",
+            "accrualPeriodicity": "After each Election",
+            "dataQuality": "Hygiene: 5 - Accuracy: 5",
+            "describedByType": "Paper or Excel",
+            "systemOfRecords": "Election Day Activities"
+        },
+        {
+            "title": "Campaign Finance Records",
+            "description": "Contents: This data is a report per candidate or Political Action Committee per cycle relating to the amount of money that was raised and expended. - Purpose: These reports are required to be filed with our office by under state law. Externally, potential candidates and campaigns may find this information useful when considering the finances of their opponents.",
+            "modified": "2/2/15",
+            "publisher": "City Commissioners Office",
+            "contactPoint": {
+                "hasEmail": "seth.bluestein@phila.gov"
+            },
+            "identifier": "54d52f5129cea01e684a0e84",
+            "accessLevel": "Public",
+            "temporal": "2008-Present",
+            "accrualPeriodicity": "7 Cycles each Year",
+            "dataQuality": "Hygiene: 3 - Accuracy: 5",
+            "describedByType": "Paper or PDF",
+            "systemOfRecords": "County Board of Elections/Campaign Finance"
+        },
+        {
+            "title": "Election Board Officials who worked on Election Day",
+            "description": "Contents: This data is the payroll sheets signed by Election Board Officials who worked on Election Day. - Purpose: This data is used to pay the people who worked on the Election Board on E-Day. Externally, the data may be used by political parties to identify divisions where they want to recruit more Election Board workers.",
+            "modified": "2014 General",
+            "publisher": "City Commissioners Office",
+            "contactPoint": {
+                "hasEmail": "seth.bluestein@phila.gov"
+            },
+            "identifier": "54d52f5129cea01e684a0e83",
+            "accessLevel": "Public",
+            "temporal": "2000-Present",
+            "accrualPeriodicity": "After each Election",
+            "dataQuality": "Hygiene: 3 - Accuracy: 4",
+            "describedByType": "Paper or PDF",
+            "systemOfRecords": "Election Boards Unit"
+        },
+        {
+            "title": "Accessibility of Polling Places",
+            "description": "Contents: This data set is a collection of the accessibility designations for each polling place. The data incldues the designation for both the building and parking. - Purpose: Internally, this data is used to identify polling places that need to be made more accessible and is reported to the state. Externally, it can be used by campaigns to make efforts to help their voters at the polls if the polling place isn't fully accessible.",
+            "modified": "2014 General",
+            "publisher": "City Commissioners Office",
+            "contactPoint": {
+                "hasEmail": "seth.bluestein@phila.gov"
+            },
+            "identifier": "54d52f5029cea01e684a0e7c",
+            "accessLevel": "Public",
+            "temporal": "Present",
+            "accrualPeriodicity": "Prior to each Election",
+            "dataQuality": "Hygiene: 5 - Accuracy: 5",
+            "describedByType": "Paper or Excel",
+            "systemOfRecords": "Polling Places/Investigations"
+        },
+        {
+            "title": "Committee Registration Statements",
+            "description": "Contents: This is a form filed when a Political Action Committee registers to operate in an election. - Purpose: These reports are required to be filed with our office by under state law. Externally, potential candidates and campaigns may find this information useful when considering the finances of their opponents or potential sources of campaign donations.",
+            "publisher": "City Commissioners Office",
+            "contactPoint": {
+                "hasEmail": "seth.bluestein@phila.gov"
+            },
+            "identifier": "54d52f5029cea01e684a0e74",
+            "accessLevel": "Public",
+            "temporal": "2008-Present",
+            "accrualPeriodicity": "When Committees register with the County Board of Elections, usually prior to each Election",
+            "dataQuality": "Hygiene: 3 - Accuracy: 5",
+            "describedByType": "Paper or PDF",
+            "systemOfRecords": "County Board of Elections/Campaign Finance"
+        },
+        {
+            "title": "Polling Places",
+            "description": "Contents: This data set contains the list of polling places. It can be organized by ward/division, accessibility rating, or type of building. - Purpose: This list is used to assign poll workers, send the machines and necessary accessibility materials, etc.",
+            "modified": "2014 General",
+            "publisher": "City Commissioners Office",
+            "contactPoint": {
+                "hasEmail": "seth.bluestein@phila.gov"
+            },
+            "identifier": "54d52f5129cea01e684a0e80",
+            "accessLevel": "Public",
+            "temporal": "Present",
+            "accrualPeriodicity": "Prior to each Election",
+            "dataQuality": "Hygiene: 5 - Accuracy: 5",
+            "describedByType": "Paper or Excel",
+            "systemOfRecords": "Polling Places/Investigations"
+        }
+    ]
+}

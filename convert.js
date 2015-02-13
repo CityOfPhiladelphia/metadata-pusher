@@ -1,5 +1,19 @@
 var request = require('request'),
+	fs = require('fs'),
 	config = require('./config.js');
+
+// Lets the @keyString have depth, ie. 'foo' or 'foo.bar'
+var deepValue = function(targetObj, keyString, value) {
+	var keyStack = keyString.split('.'),
+		obj = targetObj,
+		key;
+	while(obj && (key = keyStack.shift()) && (value === undefined || keyStack.length)) {
+		if(value) obj[key] = {};
+		obj = obj[key];
+	}
+	if(value) obj[key] = value;
+	return obj;
+}
 
 var output = {};
 
@@ -29,22 +43,19 @@ request({
 			// Validate the required fields are provided in the field definition and are not null
 			if(field.pod !== undefined && field.pod && field.source !== undefined && field.source) {
 				// If the source is defined as a function, pass the record through the function
-				if(typeof field.source === 'function') {
-					converted[field.pod] = field.source(record);
-				}
 				// Otherwise the source is defined as a string, and refers to a property in the record
-				else {
-					//converted[field.pod] = record[field.source];
-					keyStack = field.source.split('.');
-					value = record;
-					while(value && (key = keyStack.shift())) {
-						value = value[key];
-					}
-					converted[field.pod] = value;
-				}
+				// Uses deepValue function to get and set in case the source field is multidimensional (ie. 'foo.bar' instead of 'foo')
+				deepValue(converted, field.pod, typeof field.source === 'function' ? field.source(record) : deepValue(record, field.source));
 			}
 		});
 		output.dataset.push(converted);
 	});
-	console.log(output.dataset);
+	//console.log(output);
+	fs.writeFile('data.json', JSON.stringify(output, null, 4), function(err) {
+		if(err) {
+			console.log(err);
+		} else {
+			console.log('File written to data.json');
+		}
+	})
 });
