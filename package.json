@@ -1,0 +1,23 @@
+{
+  "name": "data-feed-mapper",
+  "version": "1.0.0",
+  "description": "Maps a data feed in a proprietary format to common standards like DCAT and POD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CityOfPhiladelphia/data-feed-mapper"
+  },
+  "author": "City of Philadelphia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CityOfPhiladelphia/data-feed-mapper/issues"
+  },
+  "homepage": "https://github.com/CityOfPhiladelphia/data-feed-mapper",
+  "dependencies": {
+    "request": "^2.55.0",
+    "underscore": "^1.8.3"
+  }
+}
