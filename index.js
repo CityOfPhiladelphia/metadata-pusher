@@ -8,7 +8,6 @@ var request = require('request'),
 	};
 
 var datajson = {
-  '@type': 'dcat:Catalog',
   conformsTo: 'https://project-open-data.cio.gov/v1.1/schema',
   dataset: []
 };

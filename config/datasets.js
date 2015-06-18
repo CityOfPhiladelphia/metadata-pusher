@@ -14,11 +14,7 @@ module.exports = {
 			'label': 'Description',
 			'pod': 'description',
 			'dcat': 'dct:description',
-			'source': function(record) {
-				var desc = 'Contents: ' + record.field_2 + ' - Purpose: ' + record.field_3;
-				if(record.field_4) desc += ' - Additional Comments: ' + record.field_4;
-				return desc;
-			}
+			'source': 'field_97'
 		},
 		{
 			'label': 'Tags',
@@ -104,7 +100,7 @@ module.exports = {
 			'label': 'Category',
 			'pod': 'theme',
 			'dcat': 'dcat:theme',
-			'source': null
+			'source': 'field_172_raw.0.identifier'
 		}
 	]
 };
