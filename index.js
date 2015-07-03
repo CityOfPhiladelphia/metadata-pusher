@@ -12,7 +12,7 @@ var knack = new Knack(process.env.KNACK_APPLICATION_ID, process.env.KNACK_API_KE
 var sourcePromises = [];
 for(var key in config) {
   sourcePromises.push(
-    knack.objects(config[key].sourceObject).records().request({
+    knack.views(config[key].sourceView).records().request({
       rows_per_page: 10000,
       format: 'both'
     })
@@ -47,9 +47,7 @@ Promise.all(sourcePromises).then(function(sources) {
 				return item;
 			});
       datasetsWithResources.push(dataset);
-		} else {
-      console.error('No resources found for ' + dataset.title)
-    }
+		}
 	});
 
   return datasetsWithResources;

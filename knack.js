@@ -9,17 +9,23 @@ var Knack = function(appId, apiKey) {
   this.path = [];
 };
 
-Knack.prototype.objects = function(object_id) {
+Knack.prototype.objects = function(id) {
   this.path.push('objects');
-  if(object_id) this.path.push(object_id);
+  if(id) this.path.push('object_' + id);
   return this;
 };
 
-Knack.prototype.records = function(record_id) {
+Knack.prototype.records = function(id) {
   this.path.push('records');
-  if(record_id) this.path.push(record_id);
+  if(id) this.path.push('record_' + id);
   return this;
 };
+
+Knack.prototype.views = function(id) {
+  this.path.push('views');
+  if(id) this.path.push('view_' + id);
+  return this;
+}
 
 Knack.prototype.request = function(options) {
   var url = this.baseUrl + this.path.join('/');

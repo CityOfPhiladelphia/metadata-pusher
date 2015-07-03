@@ -23,7 +23,7 @@ var mediaTypes = {
 module.exports = {
 	//source: 'https://api.knackhq.com/v1/scenes/scene_34/views/view_74/records/export/applications/550c60d00711ffe12e9efc64?type=json',
   //source: './data/resources.json',
-  sourceObject: 'object_4',
+  sourceView: 74,
 	parse: function(response) {
 		return response.records;
 	},
