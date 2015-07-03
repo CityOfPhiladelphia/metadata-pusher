@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/CityOfPhiladelphia/data-feed-mapper",
   "dependencies": {
+    "dotenv": "^1.2.0",
+    "promise": "^7.0.3",
     "request": "^2.55.0",
+    "slug": "^0.9.1",
     "underscore": "^1.8.3"
   }
 }
