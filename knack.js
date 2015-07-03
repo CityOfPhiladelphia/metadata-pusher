@@ -23,6 +23,7 @@ Knack.prototype.records = function(record_id) {
 
 Knack.prototype.request = function(options) {
   var url = this.baseUrl + this.path.join('/');
+  this.path = []; // clear path when finished
   return requestPromise({
     url: url,
     qs: options || {},

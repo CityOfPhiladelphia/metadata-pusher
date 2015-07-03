@@ -22,7 +22,8 @@ var mediaTypes = {
 
 module.exports = {
 	//source: 'https://api.knackhq.com/v1/scenes/scene_34/views/view_74/records/export/applications/550c60d00711ffe12e9efc64?type=json',
-  source: './data/resources.json',
+  //source: './data/resources.json',
+  sourceObject: 'object_4',
 	parse: function(response) {
 		return response.records;
 	},
@@ -30,6 +31,7 @@ module.exports = {
     {
       'label': 'Dataset ID', // meta field
       'pod': 'dataset',
+      'ckan': 'dataset',
       'source': 'field_11_raw.0.id'
     },
 		{

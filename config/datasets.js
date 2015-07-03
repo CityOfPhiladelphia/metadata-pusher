@@ -59,6 +59,13 @@ module.exports = {
       'label': 'Unique Identifier',
       'pod': 'identifier',
       'dcat': 'dct:identifier',
+			'ckan': 'id',
+			'source': 'id'
+		},
+		{
+			'label': 'Slug',
+			'pod': null,
+			'dcat': null,
 			'ckan': 'name',
       'source': 'field_185'
     },
