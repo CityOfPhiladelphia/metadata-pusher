@@ -1,3 +1,7 @@
+var slug = require('slug');
+
+slug.charmap['/'] = '-'; // slug library strips slashes by default instead of treating them as a space
+
 module.exports = {
 	//source: 'https://api.knackhq.com/v1/scenes/scene_34/views/view_73/records/export/applications/550c60d00711ffe12e9efc64?type=json',
 	//source: './data/datasets.json',
@@ -21,25 +25,36 @@ module.exports = {
 			'source': 'field_97'
 		},
 		{
-			'label': 'Tags',
-			'pod': 'keyword',
-			'dcat': 'dcat:keyword',
-			'ckan': 'tags',
-			'source': null
-		},
-		{
 			'label': 'Last Update',
 			'pod': 'modified',
 			'dcat': 'dct:modified',
 			'ckan': null,
 			'source': null
 		},
-		{
+		/*{
 			'label': 'Publisher',
 			'pod': 'publisher',
 			'dcat':	'dct:publisher',
 			'ckan': 'department',
 			'source': 'field_31_raw.0.identifier'
+		},*/
+		{
+			'label': 'Tags',
+			'pod': 'keyword',
+			'dcat': 'dcat:keyword',
+			'ckan': 'tags',
+			'source': function(record) {
+				return record.field_31_raw.length ? [ {name: record.field_31_raw[0].identifier} ] : null;
+			}
+		},
+		{
+			'label': 'Extras',
+			'pod': null,
+			'dcat': null,
+			'ckan': 'extras',
+			'source': function(record) {
+				return record.field_31_raw.length ? [ {key: 'Department', value: record.field_31_raw[0].identifier} ] : null;
+			}
 		},
 		{
 			'label': 'Contact Name',
@@ -67,7 +82,10 @@ module.exports = {
 			'pod': null,
 			'dcat': null,
 			'ckan': 'name',
-      'source': 'field_185'
+      'source': function(record) {
+				// Use the slug field if it has a value, otherwise create a slug from the title
+				return record.field_185 !== '' ? record.field_185 : slug(record.field_1, {lower: true});
+			}
     },
 		{
 			'label': 'Public Access Level',
@@ -124,8 +142,12 @@ module.exports = {
 			'label': 'Category',
 			'pod': 'theme',
 			'dcat': 'dcat:theme',
-			'ckan': null,
-			'source': 'field_172_raw.0.identifier'
+			'ckan': 'groups',
+			'source': function(record) {
+				return record.field_172_raw.length ? record.field_172_raw.map(function(item) {
+					return {name: slug(item.identifier, {lower: true}) + '-group'};
+				}) : [{name: 'uncategorized-group'}];
+			}
 		}
 	]
 };
