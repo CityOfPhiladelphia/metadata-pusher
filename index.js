@@ -73,6 +73,8 @@ new Promise(function(resolve, reject) {
   console.log('Finished combining ' + datasets.length + ' datasets');
 
   var ckanPromises = [];
+
+  // Loop through each dataset and push it to CKAN
   datasets.slice(0, 1).forEach(function(dataset) {
     // Make sure the dataset has a slug
     dataset.name = dataset.name || slug(dataset.title, {lower: true});
@@ -85,12 +87,29 @@ new Promise(function(resolve, reject) {
           else resolve(res);
         });
       })
-      .then(function() {
-        console.log('Found dataset', arguments);
-        // TODO: Compare & update
+      .then(function(response) {
+        console.log('Found dataset');
+        // TODO: Compare & Update. Idea: compare updated timestamps
       }, function(err) {
         console.error('Error finding dataset', err);
         // Create dataset
+        return new Promise(function(resolve, reject) {
+          delete dataset.id; // This is the Knack ID; CKAN will assign its own
+          ckan.action('package_create', dataset, function(err, res) {
+            if(err) reject(err);
+            else resolve(res);
+          });
+        })
+        .then(function() {
+          console.log('Success creating', arguments);
+        }, function(err) {
+          console.error('Error creating', err);
+        });
+      })
+      .then(function() {
+        console.log('Finished updating/creating');
+      }, function(err) {
+        console.error('Error updating/creating', err);
       })
     );
   });
