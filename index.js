@@ -1,18 +1,23 @@
 var _ = require('underscore'),
   Knack = require('./knack'),
   mapFields = require('./util/map-fields'),
-	config = {
-		datasets: require('./config/datasets'),
-		resources: require('./config/resources')
+	sources = {
+		datasets: require('./sources/datasets'),
+		resources: require('./sources/resources')
 	};
+
+// Load environment variables from .env
 require('dotenv').load();
 
+// Initialize Knack client
 var knack = new Knack(process.env.KNACK_APPLICATION_ID, process.env.KNACK_API_KEY);
 
 var sourcePromises = [];
-for(var key in config) {
+
+// Fetch each source and map its fields
+for(var key in sources) {
   sourcePromises.push(
-    knack.views(config[key].sourceView).records().request({
+    knack.request(sources[key].apiPath, {
       rows_per_page: 10000,
       format: 'both'
     })
@@ -20,17 +25,16 @@ for(var key in config) {
       (function(key) {
         return function(response) {
           // If config provides a parse function, run the source through it
-          var records = config[key].parse ? config[key].parse(response.body) : response.body;
-          console.log(key, records.length);
-          return mapFields(records, config[key].fields);
+          var records = sources[key].parse ? sources[key].parse(response.body) : response.body;
+          return mapFields(records, sources[key].fields);
         };
       })(key)
     )
   );
 }
 
+// Once all sources are fetched & their fields mapped, put resources into their datasets
 Promise.all(sourcePromises).then(function(sources) {
-  console.log('Combining');
   var datasets = sources[0],
     resources = sources[1],
     datasetsWithResources = [];
@@ -38,14 +42,15 @@ Promise.all(sourcePromises).then(function(sources) {
   // Group resources by their dataset id
 	var groupedResources = _.groupBy(resources, 'dataset');
 
-	// Put endpoints into their dataset
+	// Put resources into their dataset
 	datasets.forEach(function(dataset) {
 		if(groupedResources[dataset.id] !== undefined) {
 			dataset.resources = _.map(groupedResources[dataset.id], function(item) {
-				// Remove the dataset property from the distribution as it's only used by this script
+				// Remove the dataset property from the resource as it's only used by this script
 				delete item.dataset;
 				return item;
 			});
+      // This ensures datasets with no resources are excluded
       datasetsWithResources.push(dataset);
 		}
 	});

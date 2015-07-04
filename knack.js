@@ -27,8 +27,16 @@ Knack.prototype.views = function(id) {
   return this;
 }
 
-Knack.prototype.request = function(options) {
-  var url = this.baseUrl + this.path.join('/');
+Knack.prototype.request = function(path, options) {
+  var url = this.baseUrl;
+
+  if(typeof path === 'string') {
+    url += path;
+  } else {
+    url += this.path.join('/');
+    options = path; // passed as first parameter
+  }
+  
   this.path = []; // clear path when finished
   return requestPromise({
     url: url,

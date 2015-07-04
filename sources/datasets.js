@@ -1,7 +1,7 @@
 module.exports = {
 	//source: 'https://api.knackhq.com/v1/scenes/scene_34/views/view_73/records/export/applications/550c60d00711ffe12e9efc64?type=json',
 	//source: './data/datasets.json',
-	sourceView: 73,
+	apiPath: 'views/view_73/records',
 	parse: function(response) {
 		return response.records;
 	},
