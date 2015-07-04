@@ -31,13 +31,15 @@ module.exports = {
 			'ckan': null,
 			'source': null
 		},
-		/*{
+		{
 			'label': 'Publisher',
 			'pod': 'publisher',
 			'dcat':	'dct:publisher',
-			'ckan': 'department',
-			'source': 'field_31_raw.0.identifier'
-		},*/
+			'ckan': 'owner_org',
+			'source': function() {
+				return 'city-of-philadelphia';
+			}
+		},
 		{
 			'label': 'Tags',
 			'pod': 'keyword',

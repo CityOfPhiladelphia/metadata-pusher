@@ -86,9 +86,6 @@ new Promise(function(resolve, reject) {
 
   // Loop through each dataset and push it to CKAN
   datasets.slice(0, 2).forEach(function(dataset) {
-    // Make sure the dataset has a slug (now done in datasets.js source file)
-    //dataset.name = dataset.name || slug(dataset.title, {lower: true});
-
     // Check if the dataset exists
     ckanPromises.push(
       new Promise(function(resolve, reject) {
