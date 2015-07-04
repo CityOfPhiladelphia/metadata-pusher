@@ -124,7 +124,7 @@ module.exports = {
 			'label': 'Category',
 			'pod': 'theme',
 			'dcat': 'dcat:theme',
-			'ckan': 'ckan',
+			'ckan': null,
 			'source': 'field_172_raw.0.identifier'
 		}
 	]

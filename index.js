@@ -1,5 +1,9 @@
 var _ = require('underscore'),
+  Promise = require('promise'),
   Knack = require('./knack'),
+  fs = require('fs'),
+  CKAN = require('ckan'),
+  slug = require('slug'),
   mapFields = require('./util/map-fields'),
 	sources = {
 		datasets: require('./sources/datasets'),
@@ -12,7 +16,10 @@ require('dotenv').load();
 // Initialize Knack client
 var knack = new Knack(process.env.KNACK_APPLICATION_ID, process.env.KNACK_API_KEY);
 
-var sourcePromises = [];
+// Initialize CKAN client
+var ckan = new CKAN.Client(process.env.CKAN_HOST, process.env.CKAN_API_KEY);
+
+/*var sourcePromises = [];
 
 // Fetch each source and map its fields
 for(var key in sources) {
@@ -58,9 +65,43 @@ Promise.all(sourcePromises).then(function(sources) {
   return datasetsWithResources;
 }, function(err) {
   console.error('Error fetching datasets & resources', err);
+})*/
+new Promise(function(resolve, reject) {
+  resolve(require('./sources/datasets_with_resources.json'));
 })
 .then(function(datasets) {
-  console.log('Finished with ' + datasets.length + ' datasets');
+  console.log('Finished combining ' + datasets.length + ' datasets');
+
+  var ckanPromises = [];
+  datasets.slice(0, 1).forEach(function(dataset) {
+    // Make sure the dataset has a slug
+    dataset.name = dataset.name || slug(dataset.title, {lower: true});
+
+    // Check if the dataset exists
+    ckanPromises.push(
+      new Promise(function(resolve, reject) {
+        ckan.action('package_show', {id: dataset.name}, function(err, res) {
+          if(err) reject(err);
+          else resolve(res);
+        });
+      })
+      .then(function() {
+        console.log('Found dataset', arguments);
+        // TODO: Compare & update
+      }, function(err) {
+        console.error('Error finding dataset', err);
+        // Create dataset
+      })
+    );
+  });
+
+  return Promise.all(ckanPromises);
+
 }, function(err) {
   console.error('Error combining datasets & resources', err);
+})
+.then(function() {
+  console.log('All done');
+}, function(err) {
+  console.error('Error', err);
 })

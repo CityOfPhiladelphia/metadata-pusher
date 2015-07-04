@@ -39,7 +39,11 @@ module.exports = {
 			'pod': 'title',
 			'dcat': 'dct:title',
       'ckan': 'name',
-			'source': 'field_13_raw.0.identifier'
+			'source': function(record) {
+        var title = record.field_13_raw.length ? record.field_13_raw[0].identifier : record.field_12;
+        if(record.field_12) title += ' (' + record.field_12 + ')';
+        return title;
+      }
 		},
 		{
 			'label': 'Description',
@@ -53,7 +57,7 @@ module.exports = {
       'pod': 'downloadURL',
       'dcat': 'dcat:downloadURL',
       'ckan': 'url',
-      'source': 'field_25_raw'
+      'source': 'field_25_raw.url'
     },
     {
       'label': 'Format',
