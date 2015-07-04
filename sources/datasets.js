@@ -38,7 +38,7 @@ module.exports = {
 			'label': 'Publisher',
 			'pod': 'publisher',
 			'dcat':	'dct:publisher',
-			'ckan': null,
+			'ckan': 'department',
 			'source': 'field_31_raw.0.identifier'
 		},
 		{

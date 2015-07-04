@@ -19,7 +19,7 @@ var knack = new Knack(process.env.KNACK_APPLICATION_ID, process.env.KNACK_API_KE
 // Initialize CKAN client
 var ckan = new CKAN.Client(process.env.CKAN_HOST, process.env.CKAN_API_KEY);
 
-/*var sourcePromises = [];
+var sourcePromises = [];
 
 // Fetch each source and map its fields
 for(var key in sources) {
@@ -57,6 +57,15 @@ Promise.all(sourcePromises).then(function(sources) {
 				delete item.dataset;
 				return item;
 			});
+
+      // Remove the id property from the dataset as it's Knack's record ID (CKAN uses its own)
+      delete dataset.id;
+
+      // Implement OpenDataPhilly-specific usage of department
+      dataset.extras = [ {key: 'Department', value: dataset.department} ];
+      dataset.tags = [ {name: dataset.department} ];
+      delete dataset.department;
+
       // This ensures datasets with no resources are excluded
       datasetsWithResources.push(dataset);
 		}
@@ -65,17 +74,22 @@ Promise.all(sourcePromises).then(function(sources) {
   return datasetsWithResources;
 }, function(err) {
   console.error('Error fetching datasets & resources', err);
-})*/
+})
+/*.then(function(datasets) {
+  var writeFile = Promise.denodeify(fs.writeFile);
+  return writeFile('./sources/datasets_with_resources.json', JSON.stringify(datasets, null, 4));
+})
+
 new Promise(function(resolve, reject) {
   resolve(require('./sources/datasets_with_resources.json'));
-})
+})*/
 .then(function(datasets) {
   console.log('Finished combining ' + datasets.length + ' datasets');
 
   var ckanPromises = [];
 
   // Loop through each dataset and push it to CKAN
-  datasets.slice(0, 1).forEach(function(dataset) {
+  datasets.slice(0, 2).forEach(function(dataset) {
     // Make sure the dataset has a slug
     dataset.name = dataset.name || slug(dataset.title, {lower: true});
 
@@ -88,10 +102,23 @@ new Promise(function(resolve, reject) {
         });
       })
       .then(function(response) {
-        console.log('Found dataset');
+        console.log('Found dataset', dataset.name);
         // TODO: Compare & Update. Idea: compare updated timestamps
+        return new Promise(function(resolve, reject) {
+          delete dataset.id; // This is the Knack ID; CKAN will assign its own
+          _.defaults(dataset, response.result);
+          ckan.action('package_update', dataset, function(err, res) {
+            if(err) reject(err);
+            else resolve(res);
+          });
+        })
+        .then(function(response) {
+          console.log('Success updating', response.result.name);
+        }, function(err) {
+          console.error('Error updating', err);
+        });
       }, function(err) {
-        console.error('Error finding dataset', err);
+        console.error('Error finding dataset', dataset.name);
         // Create dataset
         return new Promise(function(resolve, reject) {
           delete dataset.id; // This is the Knack ID; CKAN will assign its own
@@ -100,16 +127,11 @@ new Promise(function(resolve, reject) {
             else resolve(res);
           });
         })
-        .then(function() {
-          console.log('Success creating', arguments);
+        .then(function(response) {
+          console.log('Success creating', response.result.name);
         }, function(err) {
-          console.error('Error creating', err);
+          console.error('Error creating', dataset.name, err);
         });
-      })
-      .then(function() {
-        console.log('Finished updating/creating');
-      }, function(err) {
-        console.error('Error updating/creating', err);
       })
     );
   });
