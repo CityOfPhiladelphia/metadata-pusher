@@ -70,15 +70,18 @@ Promise.all(sourcePromises).then(function(sources) {
 }, function(err) {
   console.error('Error fetching datasets & resources', err);
 })
-
-/*.then(function(datasets) {
+/*
+// Generate a file for debugging purposes
+.then(function(datasets) {
   var writeFile = Promise.denodeify(fs.writeFile);
   return writeFile('./sources/datasets_with_resources.json', JSON.stringify(datasets, null, 4));
 })
+
+// Use this in debug mode to use the file instead of the Knack API
 new Promise(function(resolve, reject) {
   resolve(require('./sources/datasets_with_resources.json'));
-})*/
-
+})
+*/
 .then(function(datasets) {
   console.log('Finished combining ' + datasets.length + ' datasets');
 
