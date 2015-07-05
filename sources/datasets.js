@@ -7,7 +7,7 @@ module.exports = {
 	//source: './data/datasets.json',
 	objectId: 1,
 	viewId: 73,
-	apiPath: 'views/view_73/records',
+	apiPath: 'objects/object_1/records',
 	parse: function(response) {
 		return response.records;
 	},
