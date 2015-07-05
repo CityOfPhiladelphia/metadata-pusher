@@ -10,9 +10,19 @@ $ npm install
 
 Then create a `.env` file from `.env.sample` (you can use [demo.ckan.org](http://demo.ckan.org) to test)
 
-To push all the records, use
+To extract the records to CKAN format, use
 ```bash
-$ node push-all.js
+$ node extract.js
+```
+
+To output the records in CKAN format to a file, use
+```bash
+$ node extract.js > FILENAME.json
+```
+
+To extract and push the records at the same time, use
+```bash
+$ node extract.js | node push.js
 ```
 (There's currently a `.splice()` in place to prevent all 200+ datasets being pushed)
 
