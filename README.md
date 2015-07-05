@@ -19,6 +19,7 @@ To output the records in CKAN format to a file, use
 ```bash
 $ node extract.js > FILENAME.json
 ```
+Check out `sources/metadata.json` for an example file
 
 To extract and push the records at the same time, use
 ```bash
