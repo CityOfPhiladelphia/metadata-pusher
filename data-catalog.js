@@ -15,7 +15,9 @@ function DataCatalog(knackAppId, knackApiKey) {
 }
 
 DataCatalog.prototype.datasets = function(datasetId) {
-  return this.knack.objects(sources.datasets.objectId).records(datasetId).request()
+  return this.knack.objects(sources.datasets.objectId).records(datasetId).request({
+    rows_per_page: 10000
+  })
     .then(function(response) {
       var records;
       if(datasetId) records = [response.body]; // mapFields() expects an array of records
