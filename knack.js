@@ -17,7 +17,7 @@ Knack.prototype.objects = function(id) {
 
 Knack.prototype.records = function(id) {
   this.path.push('records');
-  if(id) this.path.push('record_' + id);
+  if(id) this.path.push(id);
   return this;
 };
 

@@ -5,6 +5,8 @@ slug.charmap['/'] = '-'; // slug library strips slashes by default instead of tr
 module.exports = {
 	//source: 'https://api.knackhq.com/v1/scenes/scene_34/views/view_73/records/export/applications/550c60d00711ffe12e9efc64?type=json',
 	//source: './data/datasets.json',
+	objectId: 1,
+	viewId: 73,
 	apiPath: 'views/view_73/records',
 	parse: function(response) {
 		return response.records;
@@ -146,9 +148,13 @@ module.exports = {
 			'dcat': 'dcat:theme',
 			'ckan': 'groups',
 			'source': function(record) {
-				return record.field_172_raw.length ? record.field_172_raw.map(function(item) {
-					return {name: slug(item.identifier, {lower: true}) + '-group'};
-				}) : [{name: 'uncategorized-group'}];
+				if(record.field_172_raw !== undefined && record.field_172_raw.length) {
+					return record.field_172_raw.map(function(item) {
+						return {name: slug(item.identifier, {lower: true}) + '-group'};
+					});
+				} else {
+					return [{name: 'uncategorized-group'}];
+				}
 			}
 		}
 	]
