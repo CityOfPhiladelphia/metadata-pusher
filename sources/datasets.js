@@ -6,8 +6,7 @@ module.exports = {
 	//source: 'https://api.knackhq.com/v1/scenes/scene_34/views/view_73/records/export/applications/550c60d00711ffe12e9efc64?type=json',
 	//source: './data/datasets.json',
 	objectId: 1,
-	viewId: 73,
-	apiPath: 'objects/object_1/records',
+	viewId: null,
 	parse: function(response) {
 		return response.records;
 	},
@@ -88,7 +87,7 @@ module.exports = {
 			'ckan': 'name',
       'source': function(record) {
 				// Use the slug field if it has a value, otherwise create a slug from the title
-				return record.field_185 !== '' ? record.field_185 : slug(record.field_1, {lower: true});
+				return record.field_189 !== '' ? record.field_189 : slug(record.field_1, {lower: true});
 			}
     },
 		{

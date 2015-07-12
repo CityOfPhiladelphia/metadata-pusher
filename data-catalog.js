@@ -1,6 +1,6 @@
 var _ = require('underscore'),
   Knack = require('./knack'),
-  deepValue = require('./util/deep-value.js')
+  deepValue = require('./util/deep-value.js'),
   sources = {
     datasets: require('./sources/datasets'),
     resources: require('./sources/resources')

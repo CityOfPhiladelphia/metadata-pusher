@@ -24,9 +24,8 @@ module.exports = {
 	//source: 'https://api.knackhq.com/v1/scenes/scene_34/views/view_74/records/export/applications/550c60d00711ffe12e9efc64?type=json',
   //source: './data/resources.json',
   objectId: 3,
-  viewId: 74,
+  viewId: 197,
   parentField: 'field_11',
-  apiPath: 'views/view_74/records',
 	parse: function(response) {
 		return response.records;
 	},
