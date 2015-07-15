@@ -14,7 +14,7 @@ var server = restify.createServer({
 });
 
 // Create route for pushing to CKAN
-server.all('/ckan/:id', function(req, res, next) {
+server.get('/ckan/:id', function(req, res, next) {
   /*// Debug
     var req = {params: {id: '5596c0d6de644f2c0e307f96'}},
     res = {send: console.log},
