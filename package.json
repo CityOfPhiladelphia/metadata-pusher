@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CityOfPhiladelphia/data-feed-mapper"
+    "url": "https://github.com/CityOfPhiladelphia/metadata-pusher"
   },
   "author": "City of Philadelphia",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/CityOfPhiladelphia/data-feed-mapper/issues"
+    "url": "https://github.com/CityOfPhiladelphia/metadata-pusher/issues"
   },
-  "homepage": "https://github.com/CityOfPhiladelphia/data-feed-mapper",
+  "homepage": "https://github.com/CityOfPhiladelphia/metadata-pusher",
   "dependencies": {
     "dotenv": "^1.2.0",
     "limiter": "^1.0.5",
