@@ -24,6 +24,7 @@ module.exports = function(ckan, dataset) {
       return ckanAction('package_update', dataset)
         .then(function(response) {
           console.log('Success updating', response.result.name);
+          return response.result;
         }, function(err) {
           console.error('Error updating', err);
         });
@@ -34,6 +35,7 @@ module.exports = function(ckan, dataset) {
       return ckanAction('package_create', dataset)
         .then(function(response) {
           console.log('Success creating', response.result.name);
+          return response.result;
         }, function(err) {
           console.error('Error creating', dataset.name, err);
         });

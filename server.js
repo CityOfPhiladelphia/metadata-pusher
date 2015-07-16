@@ -1,12 +1,17 @@
 var restify = require('restify'),
   Promise = require('promise'),
-  DataCatalog = require('./data-catalog');
+  DataCatalog = require('./data-catalog'),
+  CKAN = require('ckan'),
+  ckanUpsert = require('./ckan-upsert');
 
 // Load environment variables from .env
 require('dotenv').load();
 
 // Initialize Data Catalog
 var dataCatalog = new DataCatalog(process.env.KNACK_APPLICATION_ID, process.env.KNACK_API_KEY);
+
+// Initialize CKAN client
+var ckan = new CKAN.Client(process.env.CKAN_HOST, process.env.CKAN_API_KEY);
 
 // Initialize server
 var server = restify.createServer({
@@ -32,11 +37,13 @@ server.get('/ckan/:id', function(req, res, next) {
   // When all fetches are finished
   Promise.all(sourcePromises).then(function(sources) {
     var dataset = dataCatalog.groupResources(sources[0], sources[1]);
-
-    res.send(dataset);
+    return ckanUpsert(ckan, dataset);
+  })
+  .then(function(result) {
+    res.send({success: true, dataset: result});
     next();
   }, function(err) {
-    res.send({error: err});
+    res.send({success: false, error: err});
   });
 });
 
