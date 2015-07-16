@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/CityOfPhiladelphia/metadata-pusher",
   "dependencies": {
+    "ckan": "^0.2.3",
     "dotenv": "^1.2.0",
     "limiter": "^1.0.5",
     "promise": "^7.0.3",
