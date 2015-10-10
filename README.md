@@ -1,5 +1,6 @@
 # Metadata pusher
-Extracts metadata records from Knack database and upserts them to CKAN
+Extracts metadata records from Knack database ([example](http://metadata.phila.gov)) and upserts them to CKAN.
+Check [the wiki](https://github.com/CityOfPhiladelphia/metadata-pusher/wiki) for documentation on creating a CKAN test environment.
 
 ## Usage
 
@@ -25,7 +26,6 @@ To extract and push the records at the same time, use
 ```bash
 $ node extract.js | node push.js
 ```
-(There's currently a `.splice()` in place to prevent all 200+ datasets being pushed)
 
 To run a web server that pushes datasets individually, use
 ```bash
