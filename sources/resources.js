@@ -29,6 +29,19 @@ module.exports = {
 	parse: function(response) {
 		return response.records;
 	},
+  // Only return public, released resources
+  filters: [
+    {
+      'field':'field_9',
+      'operator':'is',
+      'value':'Public'
+    },
+    {
+      'field':'field_54',
+      'operator':'is',
+      'value':'Released'
+    }
+  ],
 	fields: [
     {
       'label': 'Dataset ID', // meta field

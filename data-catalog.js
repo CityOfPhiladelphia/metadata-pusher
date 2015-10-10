@@ -42,6 +42,9 @@ DataCatalog.prototype.resources = function(datasetId) {
       value: datasetId
     }]);
   }
+  if(sources.resources.filters) {
+    options.filters = JSON.stringify(sources.resources.filters);
+  }
   return this.knack.views(sources.resources.viewId).records().request(options)
     .then(function(response) {
       // If source file provides a parse function, run the response through it
