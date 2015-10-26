@@ -26,7 +26,7 @@ module.exports = function(ckan, dataset) {
           console.log('Success updating', response.result.name);
           return response.result;
         }, function(err) {
-          console.error('Error updating', err);
+          console.error('Error updating', dataset.name, err);
         });
     }, function(err) {
       // Couldn't find the dataset - create it
