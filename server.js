@@ -43,7 +43,7 @@ server.get('/ckan/:id', function(req, res, next) {
     res.send({success: true, dataset: result});
     next();
   }, function(err) {
-    res.send({success: false, error: err});
+    res.send(400, {success: false, error: err});
   });
 });
 
