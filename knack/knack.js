@@ -2,9 +2,15 @@
  * Client-side code to add "Push to OpenDataPhilly" button to the metadata catalog Knack application
  * knackhq.com
  */
+// Config
+var pusherConfig = {
+	scene: 'scene_61',
+	pusherHost: 'https://127.0.0.1:8080',
+	ckanHost: 'http://45.55.253.172'
+}
 
 // When manage > dataset details page loads
-$(document).on('knack-scene-render.scene_61', function(event, view, data) {
+$(document).on('knack-scene-render.' + pusherConfig.scene, function(event, view, data) {
 	// Get the dataset being viewed
   var datasetId = view.scene_id
   
@@ -25,12 +31,12 @@ $(document).on('knack-scene-render.scene_61', function(event, view, data) {
 		// Send request to metadata pusher server
     $.ajax({
       type: 'GET',
-      url: 'https://127.0.0.1:8080/ckan/' + datasetId,
+      url: pusherConfig.pusherHost + '/ckan/' + datasetId,
       success: function(response) {
         console.log('success', response)
 				
-				// Construct link to dataset in OpenDataPhilly
-        var link = 'http://45.55.253.172/dataset/' + response.dataset.name
+				// Construct link to dataset in CKAN
+        var link = pusherConfig.ckanHost + '/dataset/' + response.dataset.name
 				
 				// Show success message
         status.html('<p>Successfully updated <a href="' + link + '" target="_blank">' + response.dataset.name + '</a></p>')
