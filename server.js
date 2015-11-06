@@ -1,4 +1,5 @@
-var restify = require('restify'),
+var fs = require('fs'),
+  restify = require('restify'),
   Promise = require('promise'),
   DataCatalog = require('./data-catalog'),
   CKAN = require('ckan'),
@@ -15,8 +16,13 @@ var ckan = new CKAN.Client(process.env.CKAN_HOST, process.env.CKAN_API_KEY);
 
 // Initialize server
 var server = restify.createServer({
-  name: 'Catalog Pusher'
+  name: 'Catalog Pusher',
+  key: fs.readFileSync(process.env.SSL_KEY),
+  certificate: fs.readFileSync(process.env.SSL_CERT)
 });
+
+// Enable CORS for cross-domain use
+server.pre(restify.CORS());
 
 // Create route for pushing to CKAN
 server.get('/ckan/:id', function(req, res, next) {
