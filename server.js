@@ -14,12 +14,18 @@ var dataCatalog = new DataCatalog(process.env.KNACK_APPLICATION_ID, process.env.
 // Initialize CKAN client
 var ckan = new CKAN.Client(process.env.CKAN_HOST, process.env.CKAN_API_KEY);
 
+var serverOpts = {
+  name: 'Catalog Pusher'
+};
+
+// Enable SSL if environment variables set
+if(process.env.SSL_KEY && process.env.SSL_CERT) {
+  serverOpts.key = fs.readFileSync(process.env.SSL_KEY);
+  serverOpts.certificate = fs.readFileSync(process.env.SSL_CERT);
+};
+
 // Initialize server
-var server = restify.createServer({
-  name: 'Catalog Pusher',
-  key: fs.readFileSync(process.env.SSL_KEY),
-  certificate: fs.readFileSync(process.env.SSL_CERT)
-});
+var server = restify.createServer(serverOpts);
 
 // Enable CORS for cross-domain use
 server.pre(restify.CORS());
